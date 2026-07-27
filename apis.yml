@@ -1,7 +1,24 @@
 aid: gymnadz
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gymnadz.png
 name: GymNadz
-description: GymNadz is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: GymNadz is a women-focused fitness application offering personalized workout programs,
+  nutrition and meal plans, and community features. The platform provides a library of 300+ exercises
+  with customizable workout and meal plans tailored to individual fitness goals, plus progress tracking
+  and coach interaction. It is delivered as consumer iOS and Android mobile apps rather than as a
+  developer platform. GymNadz is a portfolio company of 500 Global, tracked in the API Evangelist
+  network. No public API, developer portal, SDK, or machine-readable API surface was found during
+  enrichment; this profile captures the company's public identity and domain security posture.
 url: https://raw.githubusercontent.com/api-evangelist/gymnadz/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fitness
+- Health
+- Wellness
+- Mobile
+- Nutrition
+- Women
+- Consumer App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gymnadz-domain-security.yml
 - type: Website
   url: https://gymnadz.com
+- type: Blog
+  url: https://gymnadz.com/blog
+- type: TermsOfService
+  url: https://gymnadz.com/terms-conditions-en
+- type: PrivacyPolicy
+  url: https://gymnadz.com/privacy-policy-en
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
